@@ -1,0 +1,26 @@
+:root {
+    /*colors*/
+    --bg-color-primary: #000000;
+    --bg-color-secondary: #111111;
+    --text-color-title: #FFFFFF;
+    --text-color-paragraph: #BBBBBB;
+    --text-color-titleBG: #252525;
+    /*text sizes*/
+    --section-title-size: 15rem;
+    --section-subTitle-size: 4rem;
+    --title-size: 1.8rem;
+    --paragraph-size: 1.8rem; 
+    /*fonts families*/
+    --font-text: 'Mulish', sans-serif;
+    --font-title: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
