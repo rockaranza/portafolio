@@ -24,3 +24,138 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
+/*----- HEADER ----- */
+.headerContainer {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--bg-color-primary);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    width: 40%;
+    object-fit: contain;
+}
+
+.navBar {
+    font-size: 3rem;
+    color: var(--text-color-title);
+}
+
+.mainNav {
+    width: 70%;
+    margin-left: 15rem;
+    position: absolute;
+    background-color: rgba(0,0,0,1);
+    transition: all 0.5s;
+} 
+.mostrar {
+    margin-left: -15rem;
+} 
+
+
+.itemMenu {
+    list-style: none;
+}
+
+.linkMenu {
+    display: inline-block;
+    width: 100%;
+    margin: 2rem;
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    color: var(--text-color-title);
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .header {
+        width: 80%;
+        height: 20vh;
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo{
+        height: 10vh;
+    }
+    .navBar {
+        display:none;
+        position: unset;
+    }
+
+    .mainNav {
+        width: 100%;
+        margin: 0;
+        height: 10vh;
+        position: unset;
+        background-color:var(--bg-color-primary);
+        transition: all 0s;
+    } 
+
+    .menu {
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .header {
+        height: 10vh;
+        margin: 1rem auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/*----- Fin HEADER -----*/
+
+/*----- HOME ------*/
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+/*----- Fin HOME -----*/
+
+/*COMPONENTES*/
+/* .titleFirstName {
+    font-family: var(--font-title);
+    font-size: var(--section-title-size);
+    font-weight: 900;
+    -webkit-text-stroke: 2px var(--text-color-title);
+    color: transparent;
+}
+
+.titleWhite {
+    font-family: var(--font-title);
+    font-size: var(--section-title-size);
+    font-weight: 900;
+    color: var(--text-color-title);
+}
+
+.titleBlack {
+    font-family: var(--font-title);
+    font-size: var(--section-title-size);
+    font-weight: 900;
+    -webkit-text-stroke: 2px var(--text-color-titleBG);
+    color: transparent;
+}
+
+.titleSection {
+    font-family: var(--font-title);
+    font-size: var(--section-subTitle-size);
+    color: var(--text-color-title);
+} */
