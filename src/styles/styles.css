@@ -524,6 +524,98 @@ html {
 }
 /*----- Fin PROJECTS -----*/
 
+/*----- CONTACT -----*/
+.contactContainer {
+    width: 100%;
+    padding: 5rem 0 4rem 0;
+    background-color: var(--bg-color-primary);
+}
+
+.contact {
+    width: 90%;
+    margin: auto;
+}
+
+.formContainer {
+    display: flex;
+    padding: 4rem 0;
+    flex-direction: column;
+}
+
+.formContainer p {
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    color:var(--text-color-paragraph);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.inputText {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    border: solid 1px var(--text-color-titleBG);
+    background-color: var(--bg-color-primary);
+    color: var(--text-color-title);
+}
+
+.inputText:focus {
+    border-color: var(--text-color-paragraph);
+    outline: none;
+}
+
+.inputMenssage {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    border: solid 1px var(--text-color-titleBG);
+    background-color: var(--bg-color-primary);
+    color: var(--text-color-title);
+}
+
+.inputMenssage:focus {
+    border-color: var(--text-color-paragraph);
+    outline: none;
+}
+
+.button {
+    width: 20rem;
+    height: 6rem;
+    font-size: var(--paragraph-size);
+    border: solid 1px var(--text-color-title);
+    background-color: var(--text-color-title);
+}
+
+.button:hover {
+    background-color: var(--bg-color-primary);
+    transition: all ease 0.5s;
+    color: var(--text-color-title);
+}
+
+@media(min-width: 768px) {
+    .contactContainer {
+        padding: 12rem 0 4rem 0;
+    }
+}
+
+@media(min-width: 1024px) {
+    .contactContainer {
+        padding: 8rem 0 4rem 0;
+    }
+}
+/*----- Fin CONTACT -----*/
+
 /*----- FOOTER -----*/
 .footerContainer {
     width: 100%;
