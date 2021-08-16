@@ -7,11 +7,13 @@
     --text-color-titleBG: #252525;
     /*text sizes*/
     --section-title-smallSize: 4.5rem;
-    --section-title-mediumSize: 8rem;
+    --section-title-mediumSize: 10rem;
     --section-title-largeSize: 12rem;
-    --section-subTitle-size: 4rem;
+    --section-subTitle-smallSize: 2rem;
+    --section-subTitle-mediumSize: 3rem;
+    --section-subTitle-largeSize: 4rem;
     --title-size: 1.8rem;
-    --paragraph-size: 1.8rem; 
+    --paragraph-size: 1.5rem; 
     /*fonts families*/
     --font-text: 'Mulish', sans-serif;
     --font-title: 'Montserrat', sans-serif;
@@ -54,8 +56,18 @@ html {
 
 .titleSection {
     font-family: var(--font-title);
-    font-size: var(--section-subTitle-size);
+    font-size: var(--section-subTitle-smallSize);
     color: var(--text-color-title);
+}
+
+.text-backTitle {
+    position: absolute;
+    margin-top: 0rem;
+}
+
+.text-frontTitle {
+    position: relative;
+    margin-top: -10rem;
 }
 
 /*----- HEADER ----- */
@@ -233,6 +245,12 @@ html {
     .titleWhite {
         font-size: var(--section-title-mediumSize);
     }
+    .titleSection {
+        font-size: var(--section-subTitle-mediumSize);
+    }
+    .text-frontTitle {
+        margin-top: -6rem;
+    }
 
     .homeImg {
         width: 70%;
@@ -257,9 +275,72 @@ html {
     .titleName {
         font-size: 4rem;
     }
+    .titleSection {
+        font-size: var(--section-subTitle-largeSize);
+    }
+    .text-frontTitle {
+        margin-top: -8rem;
+    }
 }
 /*----- Fin HOME -----*/
 
 /*----- ABOUT ME -----*/
+.aboutMeContainer {
+    width: 100%;
+    padding: 4rem 0 4rem 0;
+    background-color: var(--bg-color-primary);
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.aboutMeTitle {
+    display: none;
+}
+
+.aboutMeContainerText p{
+    margin-top: 2rem;
+    font-size: var(--paragraph-size);
+    font-family: var(--font-text);
+    text-align: justify;
+    line-height: 2rem;
+    color: var(--text-color-paragraph)
+}
+
+.aboutMeContainerImg img{
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .aboutMeContainer {
+        padding: 10rem 0 4rem 0;
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .aboutMeTitle {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutMeDescrition {
+        display: flex;
+        margin-top: 2rem;
+    }
+    .aboutMeContainerImg img{
+        width: 80%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .aboutMeDescrition {
+        margin-top: 5rem;
+    }
+}
 
 /*----- Fin ABOUT ME -----*/
