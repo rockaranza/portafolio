@@ -456,6 +456,74 @@ html {
 }
 /*----- Fin SKILLS -----*/
 
+/*----- PROJECTS -----*/
+.projectsContainer {
+    width: 100%;
+    padding: 4rem 0 4rem 0;
+    background-color: var(--bg-color-secondary);
+}
+
+.projects {
+    width: 90%;
+    margin: auto;
+}
+
+.cardsProjects {
+    margin-top: 3rem;
+}
+
+.card {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-size: var(--title-size);
+    color:var(--text-color-title)
+}
+
+.card p {
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    color: var(--text-color-paragraph);
+}
+@media(min-width: 768px) {
+    .projectsContainer {
+        padding: 12rem 0 4rem 0;
+    }
+}
+
+@media(min-width: 1024px) {
+    .projectsContainer {
+        padding: 8rem 0 4rem 0;
+    }
+
+    .projects {
+        width: 80%;
+        margin: auto;
+    }
+
+    .cardsProjects {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .card {
+        width: 30%;
+    }  
+ 
+}
+/*----- Fin PROJECTS -----*/
+
 /*----- FOOTER -----*/
 .footerContainer {
     width: 100%;
