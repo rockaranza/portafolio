@@ -607,11 +607,21 @@ html {
     .contactContainer {
         padding: 12rem 0 4rem 0;
     }
+
+    .contact {
+        width: 80%;
+    }
 }
 
 @media(min-width: 1024px) {
     .contactContainer {
         padding: 8rem 0 4rem 0;
+    }
+
+    .formContainer {
+        width: 60%;
+        margin: auto;
+        padding-top: 8rem;
     }
 }
 /*----- Fin CONTACT -----*/
@@ -650,5 +660,29 @@ html {
 
 .socialNetworks i {
     color:var(--text-color-title);
+}
+
+@media(min-width: 1024px) {
+    .footer p {
+        font-size: 1.5rem;
+    }
+
+    .socialNetworks {
+        width: 20%;
+    }
+
+    .socialNetworks i {
+        font-size: 3rem;
+    }
+
+    .linkedinColor:hover {
+        color: #2764AC;
+    }
+    .twitterColor:hover {
+        color: #39A2F2;
+    }
+    .gitHubColor:hover {
+        color: #000000;
+    }
 }
 /*----- Fin FOOTER -----*/
