@@ -6,7 +6,9 @@
     --text-color-paragraph: #BBBBBB;
     --text-color-titleBG: #252525;
     /*text sizes*/
-    --section-title-size: 15rem;
+    --section-title-smallSize: 4.5rem;
+    --section-title-mediumSize: 8rem;
+    --section-title-largeSize: 15rem;
     --section-subTitle-size: 4rem;
     --title-size: 1.8rem;
     --paragraph-size: 1.8rem; 
@@ -29,7 +31,7 @@ html {
 .headerContainer {
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     background-color: var(--bg-color-primary);
 }
 
@@ -40,11 +42,13 @@ html {
     width: 90%;
     height: 10vh;
     margin: auto;
+    padding-top: 1rem;
     position: relative;
 }
 
 .logo {
-    width: 40%;
+    width: 10rem;
+    height: auto;
     object-fit: contain;
 }
 
@@ -89,11 +93,16 @@ html {
     }
 
     .logo{
-        height: 10vh;
+        width: 20rem;
+        height: auto;
     }
     .navBar {
         display:none;
         position: unset;
+    }
+
+    .menuContainer {
+        width: 100%;
     }
 
     .mainNav {
@@ -107,7 +116,13 @@ html {
 
     .menu {
         display: flex;
+        padding-top: 2rem;
+        justify-content: space-between;
         width: 100%;
+    }
+
+    .linkMenu {
+        margin: 0;
     }
 
 }
@@ -119,15 +134,50 @@ html {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .logo {
+        width: 20rem;
+        height: auto;
+    }
+    .menuContainer {
+        width: 50%;
+    }
+
 }
 /*----- Fin HEADER -----*/
 
 /*----- HOME ------*/
 .home {
+    display: flex;
     width: 100%;
     height: 100vh;
-    background-color: red;
+    background-color: var(--bg-color-primary);
+    /* background: url("/academlo/portafolio/src/img/yoTest2.png");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover; */
 }
+
+.titlesHome {
+    width: 90%;
+    margin: auto;
+}
+
+.titleName {
+    position: absolute;
+    font-size: 2rem;
+    font-family: var(--font-text);
+    font-style: italic;
+    color: var(--text-color-paragraph);
+}
+
+@media(min-width: 768px) {
+    .titlesHome {
+        width: 80%;
+        margin: auto;
+    }
+}
+
 /*----- Fin HOME -----*/
 
 /*COMPONENTES*/
@@ -137,18 +187,18 @@ html {
     font-weight: 900;
     -webkit-text-stroke: 2px var(--text-color-title);
     color: transparent;
-}
+} */
 
 .titleWhite {
     font-family: var(--font-title);
-    font-size: var(--section-title-size);
+    font-size: var(--section-title-smallSize);
     font-weight: 900;
     color: var(--text-color-title);
 }
 
 .titleBlack {
     font-family: var(--font-title);
-    font-size: var(--section-title-size);
+    font-size: 4.5rem;
     font-weight: 900;
     -webkit-text-stroke: 2px var(--text-color-titleBG);
     color: transparent;
@@ -158,4 +208,4 @@ html {
     font-family: var(--font-title);
     font-size: var(--section-subTitle-size);
     color: var(--text-color-title);
-} */
+}
