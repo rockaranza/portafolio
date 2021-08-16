@@ -31,14 +31,6 @@ html {
 
 
 /*COMPONENTES*/
-/* .titleFirstName {
-    font-family: var(--font-title);
-    font-size: var(--section-title-size);
-    font-weight: 900;
-    -webkit-text-stroke: 2px var(--text-color-title);
-    color: transparent;
-} */
-
 .titleWhite {
     font-family: var(--font-title);
     font-size: var(--section-title-smallSize);
@@ -69,6 +61,41 @@ html {
     position: relative;
     margin-top: -3.5rem;
 }
+
+@media(min-width: 768px) {
+    .titleBlack {
+        font-size:var(--section-title-mediumSize);
+    }
+    .titleWhite {
+        font-size: var(--section-title-mediumSize);
+    }
+    .titleSection {
+        font-size: var(--section-subTitle-mediumSize);
+    }
+    .text-frontTitle {
+        margin-top: -6rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .titleBlack {
+        font-size:var(--section-title-largeSize);
+    }
+    .titleWhite {
+        font-size: var(--section-title-largeSize);
+    }
+    .titleName {
+        font-size: 4rem;
+    }
+    .titleSection {
+        font-size: var(--section-subTitle-largeSize);
+    }
+    .text-frontTitle {
+        margin-top: -8rem;
+    }
+}
+
+/*----- Fin COMPONENTES -----*/
 
 /*----- HEADER -----*/
 .headerContainer {
@@ -239,19 +266,6 @@ html {
         position: relative;
     }
 
-    .titleBlack {
-        font-size:var(--section-title-mediumSize);
-    }
-    .titleWhite {
-        font-size: var(--section-title-mediumSize);
-    }
-    .titleSection {
-        font-size: var(--section-subTitle-mediumSize);
-    }
-    .text-frontTitle {
-        margin-top: -6rem;
-    }
-
     .homeImg {
         width: 70%;
         height: auto;
@@ -262,24 +276,6 @@ html {
         width: 100%;
         height: 100vh;
         /* object-fit: cover; */
-    }
-}
-
-@media(min-width: 1024px) {
-    .titleBlack {
-        font-size:var(--section-title-largeSize);
-    }
-    .titleWhite {
-        font-size: var(--section-title-largeSize);
-    }
-    .titleName {
-        font-size: 4rem;
-    }
-    .titleSection {
-        font-size: var(--section-subTitle-largeSize);
-    }
-    .text-frontTitle {
-        margin-top: -8rem;
     }
 }
 /*----- Fin HOME -----*/
