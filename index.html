@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="headerContainer">
+    <header class="headerContainer" id="header">
         <div class="header">
             <img src="src/img/LogoOcaranza.png" alt="Ocaranza" class="logo">
             <div class="menuContainer">
@@ -21,7 +21,7 @@
                 </span>
                 <nav class="mainNav" id="mainNav">
                     <ul class="menu" id="menu">
-                        <li class="itemMenu"><a href="#" class="linkMenu">Inicio</a></li>
+                        <li class="itemMenu"><a href="#home" class="linkMenu">Inicio</a></li>
                         <li class="itemMenu"><a href="#aboutMe" class="linkMenu">Sobre Mi</a></li>
                         <li class="itemMenu"><a href="#skills" class="linkMenu">Habilidades</a></li>
                         <li class="itemMenu"><a href="#proyects" class="linkMenu">Proyectos</a></li>
@@ -35,8 +35,8 @@
     <!-- CUERPO PAGINA -->
     <main class="mainContainer">
         <!-- HOME -->
-        <section class="homeContainer">
-            <div class="home">
+        <section class="homeContainer" id="home">
+            <div class="home" id="homeLimit">
                 <div class="titlesHome">
                     <h2 class="titleBlack">FULLSTACK</h2>
                     <h2 class="titleWhite">DEVELOPER</h2>
@@ -155,6 +155,11 @@
                 </div>
             </div>
         </section>
+
+        <!-- UP BUTTTON -->
+        <button id="upButton" class="upButton hidden">
+            <i class="fas fa-rocket"></i>
+        </button>
     </main>
 
     <footer class="footerContainer">

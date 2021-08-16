@@ -95,6 +95,40 @@ html {
     }
 }
 
+    /* SCROLL BUTTON */
+.upButton {
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--text-color-paragraph);
+    color: var(--text-color-titleBG);
+    font-size: 3rem;
+}
+
+@media(min-width: 768px) {
+    .upButton {
+        bottom: 7rem;
+        right: 4rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .upButton {
+        bottom: 8rem;
+        right: 4rem;
+    }
+
+    .upButton:hover {
+        background-color: var(--text-color-title);
+        color: var(--bg-color-primary);
+    }
+}
+/* FIN UP BUTTON */
+
 /*----- Fin COMPONENTES -----*/
 
 /*----- HEADER -----*/
@@ -151,6 +185,10 @@ html {
     font-size: var(--paragraph-size);
     color: var(--text-color-title);
     text-decoration: none;
+}
+/*Cambiar color Header*/
+.headerColor {
+    background-color: var(--bg-color-primary);
 }
 
 @media (min-width: 768px) {
