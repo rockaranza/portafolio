@@ -8,7 +8,7 @@
     /*text sizes*/
     --section-title-smallSize: 4.5rem;
     --section-title-mediumSize: 8rem;
-    --section-title-largeSize: 15rem;
+    --section-title-largeSize: 12rem;
     --section-subTitle-size: 4rem;
     --title-size: 1.8rem;
     --paragraph-size: 1.8rem; 
@@ -25,6 +25,37 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+}
+
+
+/*COMPONENTES*/
+/* .titleFirstName {
+    font-family: var(--font-title);
+    font-size: var(--section-title-size);
+    font-weight: 900;
+    -webkit-text-stroke: 2px var(--text-color-title);
+    color: transparent;
+} */
+
+.titleWhite {
+    font-family: var(--font-title);
+    font-size: var(--section-title-smallSize);
+    font-weight: 900;
+    color: var(--text-color-title);
+}
+
+.titleBlack {
+    font-family: var(--font-title);
+    font-size: var(--section-title-smallSize);
+    font-weight: 900;
+    -webkit-text-stroke: 2px var(--text-color-titleBG);
+    color: transparent;
+}
+
+.titleSection {
+    font-family: var(--font-title);
+    font-size: var(--section-subTitle-size);
+    color: var(--text-color-title);
 }
 
 /*----- HEADER ----- */
@@ -84,6 +115,9 @@ html {
 }
 
 @media (min-width: 768px) {
+    .headerContainer {
+        background-color: rgba(0,0,0,0);
+    }
     .header {
         width: 80%;
         height: 20vh;
@@ -110,7 +144,7 @@ html {
         margin: 0;
         height: 10vh;
         position: unset;
-        background-color:var(--bg-color-primary);
+        background-color: rgba(0,0,0,0);
         transition: all 0s;
     } 
 
@@ -147,15 +181,16 @@ html {
 /*----- Fin HEADER -----*/
 
 /*----- HOME ------*/
-.home {
+.homeContainer {
     display: flex;
     width: 100%;
     height: 100vh;
     background-color: var(--bg-color-primary);
-    /* background: url("/academlo/portafolio/src/img/yoTest2.png");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover; */
+}
+
+.home {
+    width: 90%;
+    display: flex;
 }
 
 .titlesHome {
@@ -171,41 +206,56 @@ html {
     color: var(--text-color-paragraph);
 }
 
+.homeImg{
+    display: none;
+}
+
 @media(min-width: 768px) {
-    .titlesHome {
-        width: 80%;
+    .homeContainer {
+        width: 100%;
         margin: auto;
+    }
+    .home {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+    }
+    .titlesHome {
+        width: 30%;
+        margin-left: 10%;
+        overflow-x: visible;
+        position: relative;
+    }
+
+    .titleBlack {
+        font-size:var(--section-title-mediumSize);
+    }
+    .titleWhite {
+        font-size: var(--section-title-mediumSize);
+    }
+
+    .homeImg {
+        width: 70%;
+        height: auto;
+        display: flex;
+    }
+    
+    .homeImg img {
+        width: 100%;
+        height: 100vh;
+        /* object-fit: cover; */
     }
 }
 
+@media(min-width: 1024px) {
+    .titleBlack {
+        font-size:var(--section-title-largeSize);
+    }
+    .titleWhite {
+        font-size: var(--section-title-largeSize);
+    }
+    .titleName {
+        font-size: 4rem;
+    }
+}
 /*----- Fin HOME -----*/
-
-/*COMPONENTES*/
-/* .titleFirstName {
-    font-family: var(--font-title);
-    font-size: var(--section-title-size);
-    font-weight: 900;
-    -webkit-text-stroke: 2px var(--text-color-title);
-    color: transparent;
-} */
-
-.titleWhite {
-    font-family: var(--font-title);
-    font-size: var(--section-title-smallSize);
-    font-weight: 900;
-    color: var(--text-color-title);
-}
-
-.titleBlack {
-    font-family: var(--font-title);
-    font-size: 4.5rem;
-    font-weight: 900;
-    -webkit-text-stroke: 2px var(--text-color-titleBG);
-    color: transparent;
-}
-
-.titleSection {
-    font-family: var(--font-title);
-    font-size: var(--section-subTitle-size);
-    color: var(--text-color-title);
-}
