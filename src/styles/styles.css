@@ -165,10 +165,11 @@ html {
 }
 
 .mainNav {
-    width: 70%;
+    width: 100%;
     margin-left: 15rem;
     position: absolute;
-    background-color: rgba(0,0,0,1);
+    /* background-color: rgba(0,0,0,1); */
+    background-color: red;
     transition: all 0.5s;
 } 
 .mostrar {
