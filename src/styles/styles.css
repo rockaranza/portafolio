@@ -134,9 +134,9 @@ html {
 /*----- HEADER -----*/
 .headerContainer {
     width: 100%;
+    height: 10vh;
     position: fixed;
     z-index: 5;
-    background-color: var(--bg-color-primary);
 }
 
 .header {
@@ -146,7 +146,6 @@ html {
     width: 90%;
     height: 10vh;
     margin: auto;
-    padding-top: 1rem;
     position: relative;
 }
 
@@ -188,13 +187,15 @@ html {
 }
 /*Cambiar color Header*/
 .headerColor {
-    background-color: var(--bg-color-primary);
+    /* background-color: var(--bg-color-primary); */
+    background-color: red;
 }
 
 @media (min-width: 768px) {
     .headerContainer {
-        background-color: rgba(0,0,0,0);
+        height: 20vh;
     }
+
     .header {
         width: 80%;
         height: 20vh;
@@ -239,11 +240,15 @@ html {
 }
 
 @media (min-width: 1024px) {
+    .headerContainer {
+        height: 12vh;
+    }
     .header {
-        height: 10vh;
+        height: 15vh;
         margin: 1rem auto;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     .logo {
