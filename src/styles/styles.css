@@ -360,7 +360,7 @@ html {
 
 @media(min-width: 768px) {
     .aboutMeContainer {
-        padding: 10rem 0 4rem 0;
+        padding: 12rem 0 4rem 0;
     }
     .aboutMe {
         display: flex;
