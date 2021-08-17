@@ -12,7 +12,7 @@ function mostrarMenu(){
 //CAMBIA COLOR HEADER
 function positionHeader() {
     console.log(window.scrollY);
-    if(window.scrollY > 30){
+    if(window.scrollY > 60){
         header.classList.add("headerColor");
     }else{
         header.classList.remove("headerColor");
@@ -36,3 +36,4 @@ function visibilityUpButton() {
 //INVOCAR FUNCIONES
 btnMenu.addEventListener("click", mostrarMenu);
 document.addEventListener("scroll", positionHeader);
+document.addEventListener("scroll", visibilityUpButton);
