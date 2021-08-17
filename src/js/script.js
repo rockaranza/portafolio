@@ -37,3 +37,4 @@ function visibilityUpButton() {
 btnMenu.addEventListener("click", mostrarMenu);
 document.addEventListener("scroll", positionHeader);
 document.addEventListener("scroll", visibilityUpButton);
+document.addEventListener("click", scrollWindowTop);
