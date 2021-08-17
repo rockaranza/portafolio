@@ -132,6 +132,10 @@ html {
 .hidden {
     display: none;
 }
+
+.opacity {
+    opacity: 0;
+}
 /* FIN ESCONDER*/
 /*----- Fin COMPONENTES -----*/
 
@@ -162,6 +166,14 @@ html {
 .navBar {
     font-size: 3rem;
     color: var(--text-color-title);
+    position: relative;
+}
+
+.navBar2 {
+    font-size: 3rem;
+    color: var(--text-color-title);
+    position: absolute;
+    margin-left: -2.5rem;
 }
 
 .mainNav {
@@ -216,6 +228,9 @@ html {
     .navBar {
         display:none;
         position: unset;
+    }
+    .navBar2 {
+        display: none;
     }
 
     .menuContainer {

@@ -11,7 +11,6 @@ function mostrarMenu(){
 
 //CAMBIA COLOR HEADER
 function positionHeader() {
-    console.log(window.scrollY);
     if(window.scrollY > 60){
         header.classList.add("headerColor");
     }else{
@@ -19,12 +18,14 @@ function positionHeader() {
     }
 }
 
-//BOTON SUBIR
+//DETECTAR POSICION DEL SCROLL
 function scrollWindowTop() {
     let offsetMain = home.offsetTop;
     window.scrollTo(0,offsetMain);
+    menu.classList.toggle("mostrar");
 }
 
+//SUBIR AL TOP DE LA PANTALLA
 function visibilityUpButton() {
     if(window.scrollY > 200) {
         scrollButton.classList.remove("hidden");
