@@ -241,11 +241,11 @@ html {
 
 @media (min-width: 1024px) {
     .headerContainer {
-        height: 12vh;
+        height: 15vh;
     }
     .header {
         height: 15vh;
-        margin: 1rem auto;
+        margin: auto;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
