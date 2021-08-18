@@ -278,6 +278,15 @@ html {
         width: 50%;
     }
 
+    .itemMenu:hover {
+        border-bottom: 2px solid var(--text-color-title);
+        transform: all 0.6s ease;
+    }
+
+    .linkMenu:hover {
+        color:var(--text-color-paragraph);
+    }
+
 }
 /*----- Fin HEADER -----*/
 

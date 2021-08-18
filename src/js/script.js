@@ -18,14 +18,14 @@ function positionHeader() {
     }
 }
 
-//DETECTAR POSICION DEL SCROLL
+//MOVER AL TOP DE LA PAGINA
 function scrollWindowTop() {
     let offsetMain = home.offsetTop;
     window.scrollTo(0,offsetMain);
-    menu.classList.toggle("mostrar");
+    // menu.classList.toggle("mostrar");
 }
 
-//SUBIR AL TOP DE LA PANTALLA
+//MOSTRAR BOTON SUBIR
 function visibilityUpButton() {
     if(window.scrollY > 200) {
         scrollButton.classList.remove("hidden");
