@@ -180,8 +180,7 @@ html {
     width: 100%;
     margin-left: 15rem;
     position: absolute;
-    /* background-color: rgba(0,0,0,1); */
-    background-color: red;
+    background-color: var(--bg-color-primary);
     transition: all 0.5s;
 } 
 .mostrar {
@@ -204,8 +203,8 @@ html {
 }
 /*Cambiar color Header*/
 .headerColor {
-    /* background-color: var(--bg-color-primary); */
-    background-color: red;
+    background-color: var(--bg-color-primary);
+
 }
 
 @media (min-width: 768px) {
