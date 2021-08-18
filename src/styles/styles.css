@@ -204,7 +204,7 @@ html {
 /*Cambiar color Header*/
 .headerColor {
     background-color: var(--bg-color-primary);
-
+    transition: all 0.5s ease;
 }
 
 @media (min-width: 768px) {
