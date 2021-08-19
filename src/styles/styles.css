@@ -107,6 +107,7 @@ html {
     background-color: var(--text-color-paragraph);
     color: var(--text-color-titleBG);
     font-size: 3rem;
+    cursor: pointer;
 }
 
 @media(min-width: 768px) {
@@ -377,6 +378,10 @@ html {
     color: var(--text-color-paragraph)
 }
 
+.aboutMeContainerText p span {
+    font-weight: 900;
+}
+
 .aboutMeContainerImg img{
     width: 100%;
 }
@@ -485,7 +490,7 @@ html {
     }
     
     .skillCard h3 {
-        margin-top: 10rem;
+        margin-top: 13rem;
         position: absolute;
         font-size: var(--title-size);
         font-family: var(--font-text);
